@@ -10,6 +10,7 @@ A parte de los requerimientos básicos, en esta solución se ha añadido:
 - **Ordenación por todos los atributos**: Además de implementar la ordenación para los tres campos sugeridos, se ha añadido la misma opción para los demás campos. Además, también se hja añadido la opción de ordenar los resultados a través de la cabezera de la tabla a parte del select en la parte superior.
 - **Direccion del orden**: A parte de añadir ordenación ascendente se propone en la solucion, a través de un icono al lado del selector del campo a ordenar y también mostrándolo en la cabezera de la columna por la cuál se está ordenando, la opción de ordenar de manera descendiente.
 - **Tests**: Aunque no se requería en el enunciado ni se menciona que se valorará en el Evaluation Criteria, he creído conveniente hacer unos test unitarios para los tres componentes que se incluyen en la solución.
+- **GH Pages**: Se ha decidido mostrar el contenido también deployado en Gh Pages.
 
 ## Tecnologías Utilizadas
 
