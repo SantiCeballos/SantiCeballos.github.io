@@ -9,7 +9,6 @@ describe('UserTable.vue', () => {
   beforeEach(() => {
     setActivePinia(createPinia())
   })
-  console.log('test')
 
   it('renders correctly with props', async () => {
     const userStore = useUserStore()

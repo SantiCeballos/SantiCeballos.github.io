@@ -7,7 +7,7 @@ import { useUserStore } from './stores/userStore'
 import { storeToRefs } from 'pinia'
 
 const userStore = useUserStore()
-const { sortCriteria, sortDirection, criterias } = storeToRefs(userStore)
+const { sortCriteria, sortDirection } = storeToRefs(userStore)
 const searchQuery = ref('')
 
 const filteredUsers = computed(() => userStore.filteredUsers(searchQuery.value))
