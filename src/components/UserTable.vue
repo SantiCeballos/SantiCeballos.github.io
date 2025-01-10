@@ -88,6 +88,7 @@ th {
 }
 
 .arrow-icon {
+  user-select: none;
   width: 1rem;
   transition: transform 0.3s ease;
   &.rotated {
