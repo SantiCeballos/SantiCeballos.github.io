@@ -83,12 +83,12 @@ td {
   text-align: left;
 }
 th {
+  user-select: none;
   cursor: pointer;
   background-color: #f4f4f4;
 }
 
 .arrow-icon {
-  user-select: none;
   width: 1rem;
   transition: transform 0.3s ease;
   &.rotated {
