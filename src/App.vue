@@ -27,13 +27,15 @@ onMounted(() => {
         placeholder="Search by name..."
         class="search-input"
       />
-      <Dropdown
-        v-model="sortCriteria"
-        :options="userStore.criterias"
-        label="Sort by:"
-        class="dropdown"
-      />
-      <SortDirection v-model="sortDirection" />
+      <div class="sort-container">
+        <Dropdown
+          v-model="sortCriteria"
+          :options="userStore.criterias"
+          label="Sort by:"
+          class="dropdown"
+        />
+        <SortDirection v-model="sortDirection" />
+      </div>
     </div>
     <UserTable :users="filteredUsers" />
   </div>
@@ -55,8 +57,13 @@ onMounted(() => {
   font-size: 1rem;
 }
 
+.sort-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
 .dropdown {
-  align-self: center;
   display: flex;
 }
 
@@ -67,5 +74,16 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+}
+
+@media (max-width: 800px) {
+  .filters-container {
+    flex-direction: column;
+  }
+  .sort-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
 }
 </style>
